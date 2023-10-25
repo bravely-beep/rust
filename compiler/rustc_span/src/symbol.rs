@@ -985,6 +985,7 @@ symbols! {
         global_asm,
         global_registration,
         globs,
+        gp64,
         gt,
         half_open_range_patterns,
         half_open_range_patterns_in_slices,

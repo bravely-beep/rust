@@ -38,7 +38,7 @@ impl MipsInlineAsmRegClass {
     ) -> &'static [(InlineAsmType, Option<Symbol>)] {
         match (self, arch) {
             (Self::reg, InlineAsmArch::Mips64) => types! { _: I8, I16, I32, I64, F32, F64; },
-            (Self::reg, _) => types! { _: I8, I16, I32, F32; },
+            (Self::reg, _) => types! { _: I8, I16, I32, F32; gp64: I64; },
             (Self::freg, _) => types! { _: F32, F64; },
         }
     }

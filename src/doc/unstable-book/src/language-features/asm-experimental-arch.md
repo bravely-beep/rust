@@ -69,6 +69,7 @@ This feature tracks `asm!` and `global_asm!` support for the following architect
 | Architecture | Register class                  | Target feature | Allowed types                           |
 | ------------ | ------------------------------- | -------------- | --------------------------------------- |
 | MIPS32       | `reg`                           | None           | `i8`, `i16`, `i32`, `f32`               |
+| MIPS32       | `reg`                           | `gp64`         | `i8`, `i16`, `i32`, `i64`, `f32`        |
 | MIPS32       | `freg`                          | None           | `f32`, `f64`                            |
 | MIPS64       | `reg`                           | None           | `i8`, `i16`, `i32`, `i64`, `f32`, `f64` |
 | MIPS64       | `freg`                          | None           | `f32`, `f64`                            |

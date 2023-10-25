@@ -368,6 +368,7 @@ const POWERPC_ALLOWED_FEATURES: &[(&str, Stability, ImpliedFeatures)] = &[
 const MIPS_ALLOWED_FEATURES: &[(&str, Stability, ImpliedFeatures)] = &[
     // tidy-alphabetical-start
     ("fp64", Unstable(sym::mips_target_feature), &[]),
+    ("gp64", Unstable(sym::mips_target_feature), &[]),
     ("msa", Unstable(sym::mips_target_feature), &[]),
     ("virt", Unstable(sym::mips_target_feature), &[]),
     // tidy-alphabetical-end
